@@ -506,9 +506,9 @@ def hangman():
 
 win = 0
 hanged = False
-pa = "Y"
+PA = "Y"
 name = input("Hey,What's your name? ")
-while win == 1 or hanged != False or pa == "Y":
+while PA == "Y":
     tries = 6
     word = get_word().upper()
     guessed_letters = []
@@ -545,4 +545,4 @@ while win == 1 or hanged != False or pa == "Y":
             print(f"Sorry!You are hanged {name}.")
             print(word)
             sleep(1)
-    pa = input("Play again Y/N")
+    PA = input("Play again Y/N")
